@@ -1,6 +1,16 @@
 # Autostereogram-Project
 Live autostereogram generation using a kinect v1 and TouchDesigner
 
+# Use Guide
+In order to set this up, you're going to need:
+- A version of TouchDesigner installed
+- An Xbox Kinect (I used a v1)
+- Kinect for Windows SDK (for the Kinect v1, use version [1.8](https://www.microsoft.com/en-us/download/details.aspx?id=40278))
+- If the Kinect doesn't have a USB A, then you will also need a Kinect USB 2.0 to USB Type A adapter
+- A monitor with no blurring (it will mess up the pattern needed to produce the effect). I also recommend using a monitor or TV screen below a 42" so the image is more easily visible. Most laptop and computer        screens should be fine, but some TV screens try to alter the screen ratio or sharpen the image which can mess up the autostereogram effect.
+
+Download Kinect for Windows SDK and then plug the Kinect into your computer. Then load the project file on TouchDesigner.
+
 # Postmortem
 This project was my first foray into TouchDesigner. Originally this project was meant to be in Processing but once I found out TouchDesigner had native support for the Xbox Kinect v1 I swapped over. It was quite the challenge for me to pick up because I have not used a developer environment like TouchDesigner's until now (trying to compare it to something like Unity's shadergraph helped me a lot in better understanding it) and so a lot of my time spent during the course of this project reading the documentation just to figure out how it worked (and a LOT of YouTube tutorials [thanks especially to CutMod and The Interactive & Immersive HQ for your stellar videos which I will link below!]). Overall I became really happy with this project. I'm a big fan of autostereograms and I always wondered why there weren't too many public resources towards making your own, especially live generation, so I hope this project can help at least one other person out there who was like me and also wanted an opportunity to record myself in an autostereogram format :)
 I am really happy with how the visual aesthetic of this program, which mostly resulted from a issue I didn't have time to fix so instead tried to work around. Basically if the Kinect is constantly updating the final image with the depth map footage, it becomes possible to see the outine of the person in the noise image without it being the parallax effect. If I had more time I would have found a way to make it so that it could continue to capture footage at about 60FPS and display that completely to the final image, but instead I made it so that it only runs at about 5FPS. This ended up creating a sort of slideshow representation, which reminded me of old fashioned image collections like The Horse in Motion, so I also added a color filter to give it that old video film scheme. It ended up looking really cool in my opinion, like making a flip book version of an autostereogram. Another thing I would have looked into would be a way to record footage of the autostereogram in action without having to use an external software like OBS. But to finish up my thoughts I am really happy with how the project turned out, and hopefully somebody out there who also likes autostereograms will appreciate this too :)
